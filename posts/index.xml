@@ -1,0 +1,98 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Xavier Briole</title><link>https://www.xavierbriole.com/posts/</link><description>Recent content in Posts on Xavier Briole</description><generator>Hugo -- gohugo.io</generator><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Sun, 01 Sep 2019 14:10:56 +0200</lastBuildDate><atom:link href="https://www.xavierbriole.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Add macOS Mojave Dark Mode support to your website</title><link>https://www.xavierbriole.com/posts/2019/09/add-macos-mojave-dark-mode-support-to-your-website/</link><pubDate>Sun, 01 Sep 2019 14:10:56 +0200</pubDate><guid>https://www.xavierbriole.com/posts/2019/09/add-macos-mojave-dark-mode-support-to-your-website/</guid><description>The last version of macOS, macOS Mojave, includes a very cool feature that we see really everywhere. The Dark Mode is a trendy thing and can be easily supported by your website by adding a few lines in your css file.
+Medias queries Quick explanation Medias queries are used in CSS to add some specific style depends on browser behavior.
+For example, you can add CSS properties when the browser is at some breakpoint.</description><content type="html"><![CDATA[<p>The last version of macOS, macOS Mojave, includes a very cool feature that we see really everywhere. The Dark Mode is a trendy thing and can be easily supported by your website by adding a few lines in your css file.</p>
+<p><img src="/img/posts/mojave-dark-mode-support.gif" alt="mojave-dark-mode-support"></p>
+<h2 id="medias-queries">Medias queries</h2>
+<h3 id="quick-explanation">Quick explanation</h3>
+<p>Medias queries are used in CSS to add some specific style depends on browser behavior.</p>
+<p>For example, you can add CSS properties when the browser is at some breakpoint. In this case, it can be very useful to make your website responsive by resizing elements in the page.</p>
+<h3 id="the-prefers-color-scheme-media-query">The <code>prefers-color-scheme</code> media query</h3>
+<p>This media query will detect user preferences about his current theme. It can be completed by a parameter :</p>
+<table>
+<thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>no-preference</code></td>
+<td>User did not specified a theme</td>
+</tr>
+<tr>
+<td><code>light</code></td>
+<td>User specified the light theme</td>
+</tr>
+<tr>
+<td><code>dark</code></td>
+<td>User specified the dark theme</td>
+</tr>
+</tbody>
+</table>
+<h2 id="snippet">Snippet</h2>
+<div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#fb660a;font-weight:bold">media</span> (<span style="color:#fb660a;font-weight:bold">prefers-color-scheme</span>: <span style="color:#fb660a;font-weight:bold">dark</span>) {
+  <span style="color:#fb660a;font-weight:bold">body</span> {
+    <span style="color:#fb660a;font-weight:bold">background</span>: <span style="color:#0086f7;font-weight:bold">#2f2f2f</span>;
+    <span style="color:#fb660a;font-weight:bold">color</span>: <span style="color:#0086f7;font-weight:bold">#ffffff</span>;
+  }
+}
+</code></pre></div><p>In this example, we will change <code>body</code> background color and text color when user specified the dark theme.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>Changing the main theme color of your website can require a lot of color modifications. Don&rsquo;t forget to update links colors on hover, active and every others colors that can be updated.</p>
+<h2 id="compatibility">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>Not compatible</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>67</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>Not compatible</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>Not compatible</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>12.1</td>
+</tr>
+<tr>
+<td>Android Webview</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Chrome for Android</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Firefox for Android</td>
+<td>67</td>
+</tr>
+<tr>
+<td>Opera for Android</td>
+<td>Not compatible</td>
+</tr>
+<tr>
+<td>Safari for iOS</td>
+<td>13</td>
+</tr>
+</tbody>
+</table>
+]]></content></item></channel></rss>

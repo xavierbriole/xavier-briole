@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+/*****************
+  ANIMATIONS
+*****************/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/*****************
+  OVERRIDES
+*****************/
+
+.bpw-anim-fadeOut {
+  animation: slideOutRight 0.4s ease both;
+}
+
+.bpw-anim-fadeIn {
+  animation: slideInRight 0.4s ease both;
+}
+
+.bpw-from-bot .bpw-chat-bubble {
+  animation: fadeIn 0.4s ease both;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #282A34;
+  opacity: .3; /* Firefox */
+  font-size: 16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #282A34;
+  opacity: .3;
+  font-size: 16px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #282A34;
+  opacity: .3;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 !important;
+  font-family: 'Work Sans',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.bpw-floating-button {
+  background: #DF0C36;
+  box-shadow: -5px 2px 5px -5px rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+.bpw-floating-button:hover {
+  background: #cd002a;
+}
+
+.bpw-layout {
+  bottom: 60px;
+  right: 45px;
+  border: none;
+  box-shadow: 0 1px 54px 0 rgba(0,0,0,0.08);
+  border-radius: 10px;
+  height: 90%;
+  width: 100%;
+  max-height: 686px;
+  max-width: 367px;
+}
+
+.bpw-composer textarea {
+  font-size: 16px;
+  width: 75%;
+}
+
+.bpw-msg-list {
+  padding: 0 1rem 0.5rem 1rem;
+  box-shadow: 0 1px 54px 0 rgba(0,0,0,0.08);
+}
+
+.bpw-composer-inner::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  height: 120%;
+  background-image: url(https://www.smart-tribune.com/fr/wp-content/themes/smart-tribune/img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center center;
+  opacity: 0.3;
+}
+
+.bpw-msg-list-container {
+  background-color: #F7F7F7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bpw-header-container {
+  border: none;
+  background: #DF0C36;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 69px;
+}
+
+.bpw-botinfo-description {
+  font-size: 1.2em;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.bpw-botinfo-container {
+  box-shadow: 0 -40px 54px 0 rgba(0,0,0,.08);
+}
+
+.bpw-botinfo-container button,
+.bpw-botinfo-container button:focus {
+  font-size: 1.2em;
+  color: white;
+  background-color: #DF0C36;
+  border: none;
+  margin: auto;
+}
+
+.bpw-botinfo-container button:hover {
+  background-color: #de833e;
+}
+
+.bpw-header-title {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #FFFFFF;
+}
+
+.bpw-header-subtitle {
+  color: #FFFFFF;
+}
+
+.bpw-header-name {
+  font-size: 20px;
+}
+
+.bpw-composer {
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bpw-header-icon {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  z-index: 999999999;
+}
+
+.bpw-header-icon :hover {
+  fill: #b2b2b2;
+}
+
+.bpw-card-container {
+  border: none;
+  min-height: initial;
+}
+
+.bpw-card-header {
+  padding: 12px 12px 12px 20px;
+}
+
+.bpw-card-title {
+  max-height: none;
+}
+
+.bpw-card-external-icon {
+  display: none;
+}
+
+.bpw-message-group > :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bpw-chat-bubble {
+  padding: 15px;
+  border: none;
+  border-radius: 25px 25px 25px 0;
+  box-shadow: 0 2px 14px 0 rgba(227,216,216,0.7);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.bpw-chat-bubble img {
+  max-width: 200px;
+}
+
+.bpw-card-title {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.bpw-card-picture {
+  height: 270px;
+}
+
+.bpw-card-action {
+  color: #DF0C36;
+}
+
+.bpw-card-action:hover {
+  color: #000;
+}
+
+.bpw-from-user .bpw-chat-bubble {
+  background-color: #DF0C36;
+  border-radius: 25px 25px 0 25px;
+}
+
+.bpw-from-bot .bpw-chat-bubble {
+  border-radius: 25px 25px 25px 0;
+  margin-left: -15px;
+}
+
+.bpw-chat-bubble .Linkify a {
+  color: #ffa73a;
+  text-decoration: none;
+}
+
+.bpw-chat-bubble .Linkify a:hover {
+  text-decoration: underline;
+}
+
+.bpw-bot-avatar {
+  z-index: 999999999;
+}
+
+.bpw-from-bot .bpw-bot-avatar img {
+  width: 25px;
+  height: auto;
+}
+
+.bpw-bot-avatar img {
+  border: none;
+}
+
+.bpw-keyboard {
+  overflow: auto;
+}
+
+.bpw-msg-list {
+  overflow-x: hidden;
+}
+
+.bpw-keyboard-quick_reply {
+  text-align: right;
+}
+
+.bpw-button {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  height: auto;
+  border-radius: 25px 25px 0 25px;
+  border: 2px solid #DF0C36;
+  background-color: #FFFFFF;
+  color: #DF0C36;
+}
+
+.bpw-date-container {
+  opacity: 0.5;
+  color: #282A34;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 13px;
+}
+
+.bpw-date-container .bpw-small-line {
+  border-bottom: 1px solid #282A34;
+  opacity: .2;
+  width: 86px;
+  margin-top: 10px;
+}
+
+.bpw-send-button {
+  display: none;
+}
+
+.bpw-botinfo-summary {
+  border: none;
+  box-shadow: none;
+}
+
+.bpw-powered {
+  display: none;
+}
+
+.bpw-bubble-session_reset {
+  color: #bdbdbd !important;
+  box-shadow: none;
+  left: -7%;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  font-size: 12px;
+}
+
+.bpw-botinfo-links {
+  border: none;
+}
+
+/*****************
+  MEDIA QUERIES
+*****************/
+
+@media (max-width: 425px) {
+  .bpw-layout {
+    width: 100% !important;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    max-height: unset;
+    max-width: unset;
+  }
+
+  .bpw-msg-list::after {
+    content: none;
+  }
+
+  .bpw-header-container {
+    border-radius: 0;
+  }
+
+  .bpw-composer {
+    border-radius: 0;
+  }
+}
