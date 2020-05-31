@@ -8,12 +8,10 @@
 }
 
 .container a {
-  text-decoration: none;
   transition: 0.4s;
 }
 
 .container a:hover {
-  text-decoration: none;
   color: #fe5186;
 }
 
@@ -41,6 +39,10 @@
   border: none;
 }
 
+.menu__inner li a:hover {
+  text-decoration: none;
+}
+
 .theme-toggle {
   transition: 0.4s;
 }
@@ -55,6 +57,10 @@
 
 .footer__content {
   font-size: 0.8rem;
+}
+
+.footer__content span a {
+  text-decoration: none;
 }
 
 @media (max-width: 684px) {
