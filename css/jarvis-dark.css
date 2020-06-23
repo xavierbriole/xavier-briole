@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
+:root {
+  --open-button-bg-color: #fe5186;
+  --open-button-hover-color: #fe1e63;
+  --composer-bg-color: #252627;
+  --composer-text-color: #ffffff;
+  --header-bg-color: #252627;
+  --header-text-color: #ffffff;
+  --container-bg-color: #292a2d;
+  --bubble-bot-bg-color: #252627;
+  --bubble-bot-text-color: #ffffff;
+  --bubble-user-bg-color: #fe5186;
+  --bubble-user-text-color: #ffffff;
+  --button-bg-color: #fe5186;
+  --button-text-color: #ffffff;
+  --typing-bubble-bg-color: #ffffff;
+  --link-text-color: #fe5186;
+}
+
 /*****************
   ANIMATIONS
 *****************/
@@ -59,21 +77,21 @@
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ffffff;
+  color: var(--composer-text-color);
   opacity: 0.3; /* Firefox */
   font-size: 16px;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #ffffff;
+  color: var(--composer-text-color);
   opacity: 0.3;
   font-size: 16px;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #ffffff;
+  color: var(--composer-text-color);
   opacity: 0.3;
   font-size: 16px;
 }
@@ -91,18 +109,18 @@ body {
 }
 
 .bpw-floating-button {
-  background: #fe5186;
+  background: var(--open-button-bg-color);
   box-shadow: -5px 2px 5px -5px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   transition: 0.4s;
 }
 
 .bpw-floating-button:hover {
-  background: #fe1e63;
+  background: var(--open-button-hover-color);
 }
 
 .bpw-chat-container {
-  background: #292a2d;
+  background: var(--container-bg-color);
 }
 
 .bpw-layout {
@@ -118,7 +136,7 @@ body {
 }
 
 .bpw-composer textarea {
-  color: #ffffff;
+  color: var(--composer-text-color);
   font-size: 16px;
   width: 75%;
 }
@@ -142,14 +160,14 @@ body {
 }
 
 .bpw-msg-list-container {
-  background-color: #292a2d;
+  background-color: var(--container-bg-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .bpw-header-container {
   border: none;
-  background: #252627;
+  background: var(--header-bg-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 69px;
@@ -161,31 +179,14 @@ body {
   margin: 20px auto;
 }
 
-.bpw-botinfo-container {
-  box-shadow: 0 -40px 54px 0 rgba(0, 0, 0, 0.08);
-}
-
-.bpw-botinfo-container button,
-.bpw-botinfo-container button:focus {
-  font-size: 1.2em;
-  color: white;
-  background-color: #fe5186;
-  border: none;
-  margin: auto;
-}
-
-.bpw-botinfo-container button:hover {
-  background-color: #de833e;
-}
-
 .bpw-header-title {
   display: flex;
   flex-direction: column-reverse;
-  color: #ffffff;
+  color: var(--header-text-color);
 }
 
 .bpw-header-subtitle {
-  color: #ffffff;
+  color: var(--header-text-color);
 }
 
 .bpw-header-name {
@@ -193,15 +194,15 @@ body {
 }
 
 .bpw-composer {
-  background: #252627;
+  background: var(--composer-bg-color);
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .bpw-header-icon {
-  color: #ffffff;
-  fill: #ffffff;
+  color: var(--header-text-color);
+  fill: var(--header-text-color);
   z-index: 999999999;
 }
 
@@ -242,20 +243,20 @@ body {
 }
 
 .bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
-  background-color: #252627;
-  color: #ffffff;
+  background-color: var(--bubble-bot-bg-color);
+  color: var(--bubble-bot-text-color);
   border-radius: 25px 25px 25px 0;
   margin-left: -15px;
 }
 
 .bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
-  background-color: #fe5186;
-  color: #ffffff;
+  background-color: var(--bubble-user-bg-color);
+  color: var(--bubble-user-text-color);
   border-radius: 25px 25px 0 25px;
 }
 
 .bpw-typing-bubble {
-  background-color: #fff;
+  background-color: var(--typing-bubble-bg-color);
 }
 
 .bpw-card-title {
@@ -273,7 +274,7 @@ body {
 }
 
 .bpw-chat-bubble .Linkify a {
-  color: #ffa73a;
+  color: var(--link-text-color);
   text-decoration: none;
 }
 
@@ -312,21 +313,21 @@ body {
   padding: 10px;
   height: auto;
   border-radius: 25px 25px 0 25px;
-  border: 2px solid #fe5186;
-  background-color: #ffffff;
-  color: #fe5186;
+  border: 2px solid var(--button-text-color);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
 }
 
 .bpw-date-container {
   opacity: 0.5;
-  color: #ffffff;
+  color: var(--composer-text-color);
   font-size: 10px;
   font-weight: bold;
   line-height: 13px;
 }
 
 .bpw-date-container .bpw-small-line {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--composer-text-color);
   opacity: 0.2;
   width: 86px;
   margin-top: 10px;
@@ -346,7 +347,7 @@ body {
 }
 
 .bpw-bubble-session_reset {
-  color: #bdbdbd !important;
+  color: var(--composer-text-color) !important;
   box-shadow: none;
   left: -7%;
   position: relative;
