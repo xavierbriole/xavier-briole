@@ -16,6 +16,8 @@
   --button-text-color: #ffffff;
   --typing-bubble-bg-color: #ffffff;
   --link-text-color: #fe5186;
+  --link-hover-color: #fe1e63;
+  --keyboard-bg-color: #292a2d;
 }
 
 /*****************
@@ -216,7 +218,6 @@ body {
 
 .bpw-card-header {
   padding: 12px 12px 12px 20px;
-  min-height: 100px;
 }
 
 .bpw-card-title {
@@ -266,11 +267,11 @@ body {
 }
 
 .bpw-card-action {
-  color: #fe5186;
+  color: var(--link-text-color);
 }
 
 .bpw-card-action:hover {
-  color: #000;
+  color: var(--link-hover-color);
 }
 
 .bpw-chat-bubble .Linkify a {
@@ -304,6 +305,7 @@ body {
 }
 
 .bpw-keyboard-quick_reply {
+  background-color: var(--keyboard-bg-color);
   text-align: right;
 }
 
