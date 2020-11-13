@@ -145,6 +145,8 @@ body {
   color: var(--composer-text-color);
   font-size: 16px;
   width: 75%;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .bpw-msg-list {
@@ -189,7 +191,7 @@ body {
   border-top: 1px solid var(--bubble-user-bg-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 58px;
+  padding: 2px 24px;
 }
 
 .bpw-header-icon svg,
