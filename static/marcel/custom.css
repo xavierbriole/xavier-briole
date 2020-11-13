@@ -216,17 +216,21 @@ body {
 }
 
 .bpw-card-header {
-  padding: 24px 0px 8px 0px;
+  padding: 16px;
   background: var(--card-header-bg-color);
   text-align: center;
   border-top: 1px solid var(--card-header-border-color);
+}
+
+.bpw-card-subtitle {
+  margin: 10px 0;
 }
 
 .bpw-card-buttons {
   display: flex;
   justify-content: center;
   background: var(--card-buttons-bg-color);
-  padding: 8px 0px 24px 0px;
+  padding: 0 0 16px 0;
 }
 
 .bpw-card-title {
@@ -291,7 +295,6 @@ body {
 .bpw-card-title {
   font-size: 13px;
   font-weight: 300;
-  line-height: 24px;
 }
 
 .bpw-card-action {
