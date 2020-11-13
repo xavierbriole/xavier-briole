@@ -151,19 +151,6 @@ body {
   padding: 24px;
 }
 
-.bpw-composer-inner::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 25%;
-  height: 120%;
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position: center center;
-  opacity: 0.3;
-}
-
 .bpw-msg-list-container {
   background-color: var(--container-bg-color);
   border-bottom-left-radius: 10px;
@@ -371,7 +358,26 @@ body {
   margin-top: 10px;
 }
 
-.bpw-send-button {
+.bpw-send-button,
+.bpw-send-button:hover,
+.bpw-send-button:focus {
+  background: no-repeat url(send.png) center #fff;
+  width: 32px;
+  height: 32px;
+  background-size: 20px;
+  font-size: 0;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border-radius: 50%;
+}
+
+.bpw-send-button:hover,
+.bpw-send-button:focus  {
+  background-color: #d8d8d8;
+}
+
+#botpress-tooltip-1 {
   display: none;
 }
 
