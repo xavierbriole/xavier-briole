@@ -2,12 +2,16 @@
 
 :root {
   --open-button-bg-color: #dc0032;
-  --open-button-hover-color: #dc0032;
+  --open-button-hover-color: #c9002f;
+  --open-button-text-color: #ffffff;
+
   --composer-text-color: #414042;
   --composer-bg-color: #e6e7e8;
+
   --header-bg-color: #dc0032;
   --header-text-color: #ffffff;
   --header-hover-color: #b3b3b3;
+
   --container-bg-color: #ffffff;
 
   --bubble-bot-bg-color: #dc0032;
@@ -17,9 +21,12 @@
 
   --button-bg-color: #ffffff;
   --button-text-color: #414042;
+
   --typing-bubble-bg-color: #ffffff;
+
   --link-text-color: #414042;
   --link-hover-color: #b3b3b3;
+
   --keyboard-bg-color: #ffffff;
 
   --send-button-bg-color: #ffffff;
@@ -118,20 +125,33 @@ body {
 }
 
 .bpw-floating-button {
-  background: var(--open-button-bg-color);
-  box-shadow: -5px 2px 5px -5px rgba(0, 0, 0, 0.3);
+  background: url("https://bots.xavierbriole.com/api/v1/bots/marcel-bot/media/2laljj69cnyps6fg92wb-marcel-logo.png");
+  background-color: var(--open-button-bg-color);
+  background-size: 42px;
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+  box-shadow: none;
   border-radius: 32px 32px 4px 32px;
   width: 178px;
   height: 58px;
   transition: 0.4s;
 }
 
-.bpw-floating-button i::after {
-  content: "Besoin d'aide ?";
+.bpw-floating-button:hover {
+  background-color: var(--open-button-hover-color);
 }
 
-.bpw-floating-button:hover {
-  background: var(--open-button-hover-color);
+.bpw-floating-button i svg {
+  display: none;
+}
+
+.bpw-floating-button i::after {
+  content: "Besoin d'aide ?";
+  font-size: 14px;
+  color: var(--open-button-text-color);
+  font-style: normal;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 45px;
 }
 
 .bpw-chat-container {
