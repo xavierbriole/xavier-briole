@@ -22,6 +22,9 @@
   --link-hover-color: #b3b3b3;
   --keyboard-bg-color: #fbfbfb;
 
+  --send-button-bg-color: #ffffff;
+  --send-button-bg-hover-color: #dc0032;
+
   --card-header-bg-color: #ffffff;
   --card-header-border-color: #e6e7e8;
   --card-buttons-bg-color: #ffffff;
@@ -366,7 +369,7 @@ body {
 .bpw-send-button,
 .bpw-send-button:hover,
 .bpw-send-button:focus {
-  background: no-repeat url(send.png) center #fff;
+  background: no-repeat url(send.png) center var(--send-button-bg-color);
   width: 32px;
   height: 32px;
   background-size: 20px;
@@ -379,7 +382,7 @@ body {
 
 .bpw-send-button:hover,
 .bpw-send-button:focus  {
-  background-color: #d8d8d8;
+  background-color: var(--send-button-bg-hover-color);
 }
 
 #botpress-tooltip-1 {
