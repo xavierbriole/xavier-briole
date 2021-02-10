@@ -32,9 +32,13 @@
         })
 
         window.addEventListener('message', function(event) {
-            console.log(event)
             if (event.origin === 'https://bots.xavierbriole.com' && event.data.message_type === 'session_reset') {
                 window.botpressWebChat.sendEvent({ type: 'open-chat' })
+            }
+
+            if (event.origin === 'https://bots.xavierbriole.com' && event.data.type === 'lhc_event') {
+                console.log('type', event.data.type)
+                console.log('bpData', event.data.bpData)
             }
 
             if (event.data.name === 'webchatOpened') {
