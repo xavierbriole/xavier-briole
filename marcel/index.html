@@ -37,8 +37,10 @@
             }
 
             if (event.origin === 'https://bots.xavierbriole.com' && event.data.type === 'lhc_event') {
-                console.log('type', event.data.type)
-                console.log('bpData', event.data.bpData)
+                var bpData = JSON.parse(event.data.bpData)
+                if (typeof lhc_var === 'undefined') { window.lhc_var = {} }
+                lhc_var.bp_data = bpData
+                window.lh_inst.openRemoteWindow()
             }
 
             if (event.data.name === 'webchatOpened') {
@@ -65,6 +67,7 @@
         a:hover { color: #c0c0c0; }
         .bp-widget-widget { width: 200px !important; }
         .bp-widget-side { width: 500px !important; }
+        #lhc_container { display: none !important; }
     </style>
 </body>
 </html>
