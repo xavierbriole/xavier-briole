@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
 :root {
-  --open-button-bg-color: #dc0032;
-  --open-button-hover-color: #c9002f;
+  --open-button-bg-color: #ffda26;
+  --open-button-hover-color: #f0cc17;
   --open-button-text-color: #ffffff;
 
   --composer-text-color: #414042;
-  --composer-bg-color: #e6e7e8;
+  --composer-bg-color: #f7f7f7;
 
-  --header-bg-color: #dc0032;
+  --header-bg-color: #00E0C8;
   --header-text-color: #ffffff;
   --header-hover-color: #b3b3b3;
 
   --container-bg-color: #ffffff;
 
-  --bubble-bot-bg-color: #dc0032;
+  --bubble-bot-bg-color: #00E0C8;
   --bubble-bot-text-color: #ffffff;
-  --bubble-user-bg-color: #e6e7e8;
-  --bubble-user-text-color: #000000;
+  --bubble-user-bg-color: #ffda26;
+  --bubble-user-text-color: #ffffff;
 
   --button-bg-color: #ffffff;
   --button-text-color: #414042;
@@ -30,7 +30,7 @@
   --keyboard-bg-color: #ffffff;
 
   --send-button-bg-color: #ffffff;
-  --send-button-bg-hover-color: #dc0032;
+  --send-button-bg-hover-color: #00E0C8;
 
   --card-header-bg-color: #ffffff;
   --card-header-border-color: #e6e7e8;
@@ -125,14 +125,10 @@ body {
 }
 
 .bpw-floating-button {
-  background: url("https://bots.xavierbriole.com/api/v1/bots/marcel-bot/media/2laljj69cnyps6fg92wb-marcel-logo.png");
   background-color: var(--open-button-bg-color);
-  background-size: 42px;
-  background-position: 10px 50%;
-  background-repeat: no-repeat;
   box-shadow: none;
   border-radius: 32px 32px 4px 32px;
-  width: 178px;
+  width: 140px;
   height: 58px;
   transition: 0.4s;
 }
@@ -151,7 +147,6 @@ body {
   color: var(--open-button-text-color);
   font-style: normal;
   font-family: "Work Sans", sans-serif;
-  margin-left: 45px;
 }
 
 .bpw-chat-container {
@@ -217,7 +212,7 @@ body {
 
 .bpw-composer {
   background: var(--composer-bg-color);
-  border-top: 1px solid var(--bubble-user-bg-color);
+  border-top: 1px solid var(--bubble-bot-bg-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 2px 24px;
@@ -370,7 +365,7 @@ body {
 }
 
 .bpw-button {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   margin: 8px;
   border-radius: 10px 10px 2px 10px;
@@ -425,14 +420,7 @@ body {
 }
 
 .bpw-bubble-session_reset {
-  color: var(--composer-text-color) !important;
-  box-shadow: none;
-  left: -7%;
-  position: relative;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  font-size: 12px;
+  display: none;
 }
 
 .bpw-botinfo-links {
