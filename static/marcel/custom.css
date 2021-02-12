@@ -425,14 +425,7 @@ body {
 }
 
 .bpw-bubble-session_reset {
-  color: var(--composer-text-color) !important;
-  box-shadow: none;
-  left: -7%;
-  position: relative;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  font-size: 12px;
+  display: none;
 }
 
 .bpw-botinfo-links {
