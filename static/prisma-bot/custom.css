@@ -151,7 +151,7 @@ body {
   display: none;
 }
 
-.bpw-message-group > :not(:last-child) {
+.bpw-message-group > :not(:last-child):not(.hidden) {
   margin-bottom: 20px;
 }
 
@@ -177,6 +177,19 @@ body {
 
 .bpw-card-action:hover {
   color: #000;
+}
+
+.bpw-chat-bubble-content {
+  border: none;
+  padding: 0;
+}
+
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: transparent;
+}
+
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: transparent;
 }
 
 .bpw-from-user .bpw-chat-bubble {
@@ -254,13 +267,7 @@ body {
 }
 
 .bpw-bubble-session_reset {
-  color: #bdbdbd !important;
-  box-shadow: none;
-  left: -5%;
-  position: relative;
-  padding: 0;
-  margin: auto;
-  width: 100%;
+  display: none;
 }
 
 .bpw-botinfo-links {
