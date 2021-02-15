@@ -29,7 +29,7 @@
             enableArrowNavigation: false,
             enableReset: true,
             enableTranscriptDownload: true,
-            extraStylesheet: window.location.href + 'custom.min.css',
+            extraStylesheet: window.location.origin + window.location.pathname + 'custom.min.css',
         })
 
         window.addEventListener('message', function(event) {
