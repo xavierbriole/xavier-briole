@@ -322,8 +322,9 @@ body {
 }
 
 .bpw-card-title {
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--bubble-bot-bg-color);
 }
 
 .bpw-card-action {
