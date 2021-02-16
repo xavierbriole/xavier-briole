@@ -367,11 +367,14 @@ body {
   text-align: right;
   display: flex;
   justify-content: center;
-  padding: 24px 52px;
+  /* padding: 24px 52px; */
+  padding: 24px 38px;
 }
 
 .bpw-button {
-  font-size: 13px;
+  font-family: "Work Sans", sans-serif !important;
+  /* font-size: 13px; */
+  font-size: 16px;
   font-weight: 500;
   margin: 8px;
   border-radius: 10px 10px 2px 10px;
