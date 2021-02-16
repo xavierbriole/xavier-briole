@@ -399,7 +399,7 @@ body {
 .bpw-send-button,
 .bpw-send-button:hover,
 .bpw-send-button:focus {
-  background: no-repeat url(send.png) center var(--send-button-bg-color);
+  background: no-repeat url("send.png") center var(--send-button-bg-color);
   width: 32px;
   height: 32px;
   background-size: 20px;
@@ -412,6 +412,7 @@ body {
 
 .bpw-send-button:hover,
 .bpw-send-button:focus  {
+  background-image: url("send_hover.png");
   background-color: var(--send-button-bg-hover-color);
 }
 
