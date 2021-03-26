@@ -11,7 +11,8 @@ var data = [
 var date = new Date(),
     dayOfWeek = date.getDay(),
     hoursToEat = data[dayOfWeek],
-    canEat = false;
+    canEat = false,
+    answerEl = document.querySelector('.answer');
 
 if (hoursToEat.hasOwnProperty('start') && hoursToEat.hasOwnProperty('end')) {
     var hour = date.getHours();
@@ -20,16 +21,29 @@ if (hoursToEat.hasOwnProperty('start') && hoursToEat.hasOwnProperty('end')) {
 
 var response = function () {
     if (canEat) {
-        return "Yep";
+        return "Yep, bon appétit!";
     } else {
-        return "Nope";
+        return "Nope, try again later!";
     }
 };
 
-$(document).ready(function () {
-    setTimeout(() => {
-        $(".response").fadeOut(function () {
-            $(this).html(response()).fadeIn();
+var timeOut = function (content, callback) {
+    setTimeout(function () {
+        answerEl.innerHTML = content;
+        if (callback) callback();
+    }, 2000);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    timeOut('Are you sure you wanna know?', function () {
+        timeOut('Hum, okay. I\'ll give you the anwser.', function () {
+            timeOut('Ow, you\'re angry?', function () {
+                timeOut('That\'s ok…', function () {
+                    timeOut('Give me 2 seconds', function () {
+                        timeOut(response());
+                    });
+                });
+            });
         });
-    }, 800);
+    });
 });
