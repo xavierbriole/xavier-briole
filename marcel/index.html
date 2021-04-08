@@ -33,10 +33,6 @@
         })
 
         window.addEventListener('message', function(event) {
-            // if (event.origin === 'https://bots.xavierbriole.com' && event.data.message_type === 'session_reset') {
-            //     window.botpressWebChat.sendEvent({ type: 'open-chat' })
-            // }
-
             if (event.origin === 'https://bots.xavierbriole.com' && event.data.type === 'lhc_event') {
                 var bpData = JSON.parse(event.data.bpData)
                 if (typeof lhc_var === 'undefined') { window.lhc_var = {} }
@@ -44,9 +40,13 @@
                 window.lh_inst.openRemoteWindow()
             }
 
-            // if (event.data.name === 'webchatOpened') {
-            //     window.botpressWebChat.sendEvent({ type: 'open-chat' })
-            // }
+            if (event.data.name === 'webchatOpened') {
+                window.botpressWebChat.sendEvent({ type: 'proactive-trigger' })
+            }
+
+            if (event.data.message_type === 'session_reset') {
+                window.botpressWebChat.sendEvent({ type: 'proactive-trigger' })
+            }
         });
     </script>
     <script type="text/javascript">
