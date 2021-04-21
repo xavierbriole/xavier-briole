@@ -40,14 +40,14 @@
             if (event.origin === 'https://bots.xavierbriole.com' && event.data.type === 'lhc_event') {
                 var bpData = JSON.parse(event.data.bpData)
                 if (typeof lhc_var === 'undefined') { window.lhc_var = {} }
-                LHCChatOptions.attr_prefill = new Array();
-                LHCChatOptions.attr_prefill.push({'name': 'username', 'value': bpData.nick});
-                LHCChatOptions.attr_prefill.push({'name': 'email', 'value': bpData.mail});
-                LHCChatOptions.attr_prefill.push({'name': 'phone', 'value': bpData.phoneNumber});
-                LHCChatOptions.attr = new Array();
-                LHCChatOptions.attr.push({'name': 'Numero Client', 'value': bpData.clientNumber, 'type': 'hidden', 'size': 0});
-                LHCChatOptions.attr.push({'name': 'Numero Colis', 'value': bpData.parcelNumber, 'type': 'hidden', 'size': 0});
-                window.lh_inst.openRemoteWindow();
+                LHCChatOptions.attr_prefill = new Array()
+                LHCChatOptions.attr_prefill.push({'name': 'username', 'value': bpData.nick})
+                LHCChatOptions.attr_prefill.push({'name': 'email', 'value': bpData.mail})
+                LHCChatOptions.attr_prefill.push({'name': 'phone', 'value': bpData.phoneNumber})
+                LHCChatOptions.attr = new Array()
+                LHCChatOptions.attr.push({'name': 'Numero Client', 'value': bpData.clientNumber, 'type': 'hidden', 'size': 0})
+                LHCChatOptions.attr.push({'name': 'Numero Colis', 'value': bpData.parcelNumber, 'type': 'hidden', 'size': 0})
+                window.lh_inst.openRemoteWindow()
             }
 
             if (event.data.name === 'webchatOpened') {
