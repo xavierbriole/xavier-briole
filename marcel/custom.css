@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans");
-
 :root {
   --open-button-bg-color: #dc0032;
   --open-button-hover-color: #c9002f;
@@ -114,7 +112,7 @@
 
 body {
   margin: 0 !important;
-  font-family: "Work Sans", sans-serif !important;
+  font-family: "pluto_sans_dpdregular", sans-serif !important;
   font-size: 12px;
   overflow: hidden;
 }
@@ -150,7 +148,7 @@ body {
   font-size: 14px;
   color: var(--open-button-text-color);
   font-style: normal;
-  font-family: "Work Sans", sans-serif;
+  font-family: "pluto_sans_dpdregular", sans-serif;
   margin-left: 45px;
 }
 
@@ -372,7 +370,7 @@ body {
 }
 
 .bpw-button {
-  font-family: "Work Sans", sans-serif !important;
+  font-family: "pluto_sans_dpdregular", sans-serif !important;
   /* font-size: 13px; */
   font-size: 16px;
   font-weight: 500;
@@ -411,7 +409,7 @@ body {
 }
 
 .bpw-send-button:hover,
-.bpw-send-button:focus  {
+.bpw-send-button:focus {
   background-image: url("send_hover.png");
   background-color: var(--send-button-bg-hover-color);
 }
