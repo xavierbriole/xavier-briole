@@ -40,7 +40,13 @@
             if (event.origin === 'https://bots.xavierbriole.com' && event.data.type === 'lhc_event') {
                 var bpData = JSON.parse(event.data.bpData)
                 if (typeof lhc_var === 'undefined') { window.lhc_var = {} }
-                lhc_var.bp_data = bpData
+                LHCChatOptions.attr_prefill = new Array()
+                LHCChatOptions.attr_prefill.push({'name': 'username', 'value': bpData.nick})
+                LHCChatOptions.attr_prefill.push({'name': 'email', 'value': bpData.mail})
+                LHCChatOptions.attr_prefill.push({'name': 'phone', 'value': bpData.phoneNumber})
+                LHCChatOptions.attr = new Array()
+                LHCChatOptions.attr.push({'name': 'Numero Client', 'value': bpData.clientNumber, 'type': 'hidden', 'size': 0})
+                LHCChatOptions.attr.push({'name': 'Numero Colis', 'value': bpData.parcelNumber, 'type': 'hidden', 'size': 0})
                 window.lh_inst.openRemoteWindow()
             }
 
@@ -56,7 +62,7 @@
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
             var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
             var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-            po.src = '//tchatbo.dpd.fr/index.php/eng/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true?r='+referrer+'&l='+location;
+            po.src = '//tchat.dpd.fr/index.php/fre/chat/getstatus/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(department)/2/(theme)/1?r='+referrer+'&l='+location;
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
     </script>
