@@ -1,3 +1,7 @@
+/* -------------
+  Container
+------------- */
+
 .container a {
   transition: 0.4s;
 }
@@ -21,17 +25,33 @@
   width: 0%;
 }
 
+/* -------------
+  Post Info
+------------- */
+
 .post-info a:hover {
   border: none;
 }
+
+/* -------------
+  404
+------------- */
+
+.btn-404 a {
+  text-decoration: none;
+}
+
+/* -------------
+  Menu
+------------- */
 
 .menu__inner li a:hover {
   text-decoration: none;
 }
 
-.footer__inner:first-child {
-  display: none;
-}
+/* -------------
+  Footer
+------------- */
 
 .footer__content {
   font-size: 0.8rem;
@@ -41,16 +61,26 @@
   text-decoration: none;
 }
 
+/* -------------
+  Mobile
+------------- */
+
 @media (max-width: 684px) {
   .menu {
     width: 100%;
     padding: 0;
+    top: 67px;
   }
 
   .menu__inner li {
     width: 100%;
     text-align: left;
     padding: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .menu__inner li:last-child {
+    border-bottom: 1px solid #ccc;
   }
 
   .menu li a {
