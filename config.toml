@@ -73,10 +73,9 @@ disableHugoGeneratorInject = false
     title = "Xavier Briole"
     subtitle = "Front-end Developer"
     homeSubtitle = "Front-end Developer"
-    description = "Front-end Developer. This is my personal website with a small summary of me and some blog posts. Try Jarvis, my virtual assistant!"
+    description = "Front-end Developer. This is my personal website with a small summary of me and some blog posts."
     keywords = "xavier, briole, web, front, end, developer, reactjs, react, javascript, js, css, html, php, native, marseille, aix, en, provence, france"
     readOtherPosts = "Read other posts"
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
     [languages.en.params.logo]
       logoText = "$ cd /home/"
@@ -95,6 +94,13 @@ disableHugoGeneratorInject = false
         identifier = "stats"
         name = "Stats"
         url = "/stats"
+
+[params.footer]
+  trademark = true
+  rss = false
+  copyright = false
+  author = false
+  topText = ["Powered by <a href=\"http://gohugo.io\" target=\"_blank\">Hugo</a>"]
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
