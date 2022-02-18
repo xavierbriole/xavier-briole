@@ -1,21 +1,20 @@
 
-# Created by https://www.gitignore.io/api/hugo
-# Edit at https://www.gitignore.io/?templates=hugo
+# Created by https://www.toptal.com/developers/gitignore/api/hugo
+# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
 ### Hugo ###
 # Generated files by hugo
 /public/
 /resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
 
-# macOS Files
-.DS_Store
-._.DS_Store
-**/.DS_Store
-**/._.DS_Store
+# Temporary lock file while building
+/.hugo_build.lock
 
-# End of https://www.gitignore.io/api/hugo
+# End of https://www.toptal.com/developers/gitignore/api/hugo
