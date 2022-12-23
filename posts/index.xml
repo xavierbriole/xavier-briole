@@ -3,10 +3,10 @@ By example, you have something wrong with a plugin, a linter or with the global 
 Remove all settings sudo rm -rf $HOME/Library/Application\ Support/Code Remove all extensions sudo rm -rf $HOME/.</description><content type="html"><![CDATA[<p>Visual Studio is a powerful code editor with a lot of plugins (available <a href="https://marketplace.visualstudio.com/VSCode">in the Market Place</a>) that are really awesome. But for any reasons, you may have to reinstall the application.</p>
 <p>By example, you have something wrong with a plugin, a linter or with the global configuration. If you think the problem does not come from your code, you can try this.</p>
 <h2 id="remove-all-settings">Remove all settings</h2>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo rm -rf <span style="color:#fb660a">$HOME</span>/Library/Application<span style="color:#0086d2">\ </span>Support/Code
-</code></pre></div><h2 id="remove-all-extensions">Remove all extensions</h2>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo rm -rf <span style="color:#fb660a">$HOME</span>/.vscode
-</code></pre></div><h2 id="remove-application">Remove application</h2>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo rm -rf <span style="color:#fb660a">$HOME</span>/Library/Application<span style="color:#0086d2">\ </span>Support/Code
+</span></span></code></pre></div><h2 id="remove-all-extensions">Remove all extensions</h2>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo rm -rf <span style="color:#fb660a">$HOME</span>/.vscode
+</span></span></code></pre></div><h2 id="remove-application">Remove application</h2>
 <p><a href="https://freemacsoft.net/appcleaner/">AppCleaner</a> is a small application that will remove all files in the system related to the application you want to uninstall.</p>
 <p>Download <a href="https://freemacsoft.net/appcleaner/">AppCleaner</a> and drop Visual Studio Code in the AppCleaner window to uninstall it.</p>
 <h2 id="install-again">Install again</h2>
@@ -44,13 +44,13 @@ For example, you can add CSS properties when the browser is at some breakpoint.<
 </tbody>
 </table>
 <h2 id="snippet">Snippet</h2>
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#fb660a;font-weight:bold">media</span> (<span style="color:#fb660a;font-weight:bold">prefers-color-scheme</span>: <span style="color:#fb660a;font-weight:bold">dark</span>) {
-  <span style="color:#fb660a;font-weight:bold">body</span> {
-    <span style="color:#fb660a;font-weight:bold">background</span>: <span style="color:#0086f7;font-weight:bold">#2f2f2f</span>;
-    <span style="color:#fb660a;font-weight:bold">color</span>: <span style="color:#0086f7;font-weight:bold">#ffffff</span>;
-  }
-}
-</code></pre></div><p>In this example, we will change <code>body</code> background color and text color when user specified the dark theme.</p>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#fb660a;font-weight:bold">media</span> (<span style="color:#fb660a;font-weight:bold">prefers-color-scheme</span>: <span style="color:#fb660a;font-weight:bold">dark</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#fb660a;font-weight:bold">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">background</span>: <span style="color:#0086f7;font-weight:bold">#2f2f2f</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">color</span>: <span style="color:#0086f7;font-weight:bold">#ffffff</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this example, we will change <code>body</code> background color and text color when user specified the dark theme.</p>
 <h2 id="accessibility">Accessibility</h2>
 <p>Changing the main theme color of your website can require a lot of color modifications. Don&rsquo;t forget to update links colors on hover, active and every others colors that can be updated.</p>
 <h2 id="compatibility">Compatibility</h2>
