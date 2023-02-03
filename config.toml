@@ -5,7 +5,7 @@ theme = "hello-friend-ng"
 PygmentsCodeFences = true
 PygmentsStyle = "fruity"
 
-googleAnalytics = "UA-127796557-1"
+googleAnalytics = "G-SSXHZE63J1"
 
 archetypeDir = "archetypes"
 contentDir   = "content"
