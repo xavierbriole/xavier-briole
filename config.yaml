@@ -1,0 +1,108 @@
+baseurl: 'https://xavierbriole.com'
+DefaultContentLanguage: en
+theme: hello-friend-ng
+
+PygmentsCodeFences: true
+PygmentsStyle: fruity
+
+googleAnalytics: G-SSXHZE63J1
+
+archetypeDir: archetypes
+contentDir: content
+dataDir: data
+layoutDir: layouts
+publishDir: public
+
+buildDrafts: false
+buildFuture: false
+buildExpored: false
+canonifyURLs: true
+
+enableRobotsTXT: true
+enableGitInfo: false
+enableEmoji: true
+enableMissingTranslationPlaceholders: false
+disableRSS: false
+disableSitemap: false
+disable404: false
+disableHugoGeneratorInject: false
+
+params:
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+
+  contentTypeName: posts
+  defaultTheme: light
+  themeColor: '#ffffff'
+
+  customCSS:
+    - /css/custom.min.css
+  customJS:
+    - /js/script.min.js
+
+  social:
+    - name: email
+      url: 'mailto:xbriole@icloud.com'
+    - name: facebook
+      url: 'https://www.facebook.com/xavierbriole'
+    - name: twitter
+      url: 'https://twitter.com/xavierbriole'
+    - name: instagram
+      url: 'https://www.instagram.com/xavierbriole'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/xavierbriole'
+    - name: github
+      url: 'https://github.com/xavierbriole'
+    - name: gitlab
+      url: 'https://gitlab.com/xavierbriole'
+
+  footer:
+    trademark: true
+    rss: false
+    copyright: false
+    author: false
+    topText:
+      - 'Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>'
+
+languages:
+  en:
+    title: Xavier Briole
+
+    params:
+      subtitle: Front-end Developer
+      homeSubtitle: Front-end Developer
+      description: >-
+        I'm a Front-end Developer based in the south of France. Enter in my
+        personal website to discover more about me.
+      keywords: >-
+        xavier, briole, web, front, front end, developer, reactjs, react,
+        javascript, js, css, html, react native, marseille, aix en provence,
+        france
+      readOtherPosts: Read other posts
+
+      logo:
+        logoText: $ cd /home/
+        logoHomeLink: /
+
+    menu:
+      main:
+        - identifier: posts
+          name: Posts
+          url: /posts
+        - identifier: stats
+          name: Stats
+          url: /stats
+
+permalinks:
+  posts: '/posts/:year/:month/:title/'
+
+author:
+  name: Xavier Briole
+
+blackfriday:
+  hrefTargetBlank: true
+
+taxonomies:
+  tag: tags
