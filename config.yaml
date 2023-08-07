@@ -35,7 +35,6 @@ params:
 
   contentTypeName: posts
   defaultTheme: light
-  themeColor: '#ffffff'
 
   customCSS:
     - /css/custom.min.css
