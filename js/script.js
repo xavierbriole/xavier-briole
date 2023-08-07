@@ -31,22 +31,3 @@ cookiebanner.dataset.message = 'I use cookies to improve your browsing experienc
 cookiebanner.dataset.moreinfo = 'https://aboutcookies.org/';
 cookiebanner.async = true;
 document.body.appendChild(cookiebanner);
-
-/**
- * Chatbot
- */
-
-/*
-var chatbotScript = document.createElement('script');
-chatbotScript.src = 'https://bots.xavierbriole.com/assets/modules/channel-web/inject.js';
-document.body.appendChild(chatbotScript);
-
-window.onload = function() {
-    var chatbotInit = document.createElement('script');
-    chatbotInit.type = 'text/javascript';
-    
-    var chatbotConfig = 'window.botpressWebChat.init({ host: "https://bots.xavierbriole.com", botId: "jarvis", botName: "Jarvis", botConvoDescription: "Xavier\'s personal assistant", showConversationsButton: false, enableReset: false, enableTranscriptDownload: false, extraStylesheet: "' + window.location.origin + '/css/jarvis-dark.min.css" }); window.addEventListener("message", function(event) { if (event.data.name === "webchatOpened") { window.botpressWebChat.sendEvent({ type: "open-chat" }) } if (event.data.name === "webchatClosed") { window.botpressWebChat.sendEvent({ type: "close-chat" }) } })';
-    chatbotInit.appendChild(document.createTextNode(chatbotConfig));
-    document.body.appendChild(chatbotInit);
-}
-*/
