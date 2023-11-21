@@ -90,9 +90,9 @@ languages:
         - identifier: posts
           name: Posts
           url: /posts
-        - identifier: stats
-          name: Stats
-          url: /stats
+        - identifier: about
+          name: About
+          url: /about
 
 permalinks:
   posts: '/posts/:year/:month/:title/'
