@@ -58,11 +58,11 @@ params:
       url: 'https://gitlab.com/xavierbriole'
 
   footer:
-    trademark: true
+    trademark: 2023
     rss: false
     copyright: false
-    author: false
-    topText:
+    author: true
+    bottomText:
       - 'Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>'
 
 languages:
@@ -72,6 +72,9 @@ languages:
     params:
       subtitle: Front-end Developer
       homeSubtitle: Front-end Developer
+      # uncomment when theme will support it
+      # author:
+      #   name: Xavier Briole
       description: >-
         I'm a Front-end Developer based in the south of France. Enter in my
         personal website to discover more about me.
