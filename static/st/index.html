@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xav / FAQ</title>
+</head>
+<body>
+    <ul id="webVitals" style="display: flex; position: relative; z-index: 999; box-shadow: 0px 1px 3px gray; margin: 0; padding: 0; background-color: white;"></ul>
+    <script type="text/javascript" nonce="nonce">
+        (function () {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js';
+            script.nonce="nonce";
+
+            function renderWebVital(data, type) {
+                const li = document.createElement('li');
+                li.innerHTML = '<b>' + type + '</b>: ' + data.value.toFixed(2);
+                li.style = 'list-style: none; display: block; margin: 16px;';
+                li.style.color = data.rating === 'good' ? 'green' : data.rating === 'poor' ? 'orange': 'red';
+
+                document.getElementById('webVitals').appendChild(li);
+                console.log('webVitals:', type, data);
+            }
+
+            script.onload = function () {
+                webVitals.onCLS((data) => {
+                    renderWebVital(data, 'CLS');
+                });
+                webVitals.onFID((data) => {
+                    renderWebVital(data, 'FID');
+                });
+                webVitals.onLCP((data) => {
+                    renderWebVital(data, 'LCP');
+                });
+                webVitals.onTTFB((data) => {
+                    renderWebVital(data, 'TTFB');
+                });
+                webVitals.onFCP((data) => {
+                    renderWebVital(data, 'FCP');
+                });
+                webVitals.onINP((data) => {
+                    renderWebVital(data, 'INP');
+                });
+            };
+
+            document.head.appendChild(script);
+        })();
+    </script>
+
+    
+<div id="st-faq"></div>
+        
+    <script type="text/javascript" nonce="nonce">
+        window.addEventListener('STFAQLoaded', function(e){
+            e.detail.init(
+{
+    "kbId": 25,
+    "locale": "fr",
+    "cookieOptin": true,
+    "filters": {
+        "thematics": [],
+        "tags": []
+    }
+}
+            );
+        });
+    </script>
+    <script type="text/javascript" async src="https://components-library.app.smart-tribune-staging.ovh/main/1259.js"></script>
+</body>
+</html>
