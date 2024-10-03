@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="st-faq"></div>
+        <script type="text/javascript" nonce="">
+            window.addEventListener('STFAQLoaded', function (e) {
+                e.detail.init(
+                    {
+                        "cookieOptin": false,
+                        "auth": true
+                    }
+                );
+            });
+
+            function sendCurrentUrlToIframe() {
+                var iframe = document.querySelector('iframe');
+                if (iframe) {
+                    iframe.contentWindow.postMessage({
+                        type: 'STORE_URL',
+                        url: window.location.href
+                    }, '*');
+                }
+            }
+
+            window.addEventListener('load', sendCurrentUrlToIframe);
+
+            window.addEventListener('popstate', sendCurrentUrlToIframe);
+            window.addEventListener('pushState', sendCurrentUrlToIframe);
+            window.addEventListener('replaceState', sendCurrentUrlToIframe);
+        </script>
+         <script type="text/javascript" async
+         src="https://assets.app.smart-tribune.com/smart-tribune/FAQ/extension.main.js"></script>
+    </body>
+</html>
