@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>TEST loic back ref</title>
+  </head>
+
+  <body>
+    <div id="st-faq"></div>
+    <script type="text/javascript">
+      window.addEventListener("STFAQLoaded", function (e) {
+        e.detail.init({
+          kbId: 297,
+          locale: "fr",
+          cookieOptin: false,
+          filters: {
+            thematics: [],
+            tags: [],
+          },
+          urls :{
+            localization :{
+              fr: "https://xavierbriole.com/faq/faqfr.html",
+              en: "https://xavierbriole.com/faq/faqen.html",
+            }
+          }
+        });
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      async
+      src="https://assets.app.smart-tribune.com/carrefour/FAQ/faq.main.js"
+    ></script>
+  </body>
+</html>
